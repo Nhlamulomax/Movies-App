@@ -1,0 +1,30 @@
+<header style="text-align:center">
+    <h4>EDIT MOVIE</h4>
+    <hr>
+  </header>
+  <body>
+    <form ng-submit="onSubmit()">
+        <label>
+          <b>Name:</b>
+          <input type="text" ng-model="Name">
+        </label>
+      
+        <label>
+          <b>Category:</b>
+          <input type="text" ng-model="Category">
+        </label>
+    
+        <label>
+          <b>Rate:</b>
+          <input type="text" ng-model="Rate">
+        </label>
+    
+        <button [routerLink]=" ['./app-movies-list'] ">Save</button> 
+        <hr>
+        <button [routerLink]=" ['./app-movies-list'] ">Cancel</button> 
+    </form>
+    
+  </body>
+  
+  <!--<router-outlet></router-outlet>-->
+  

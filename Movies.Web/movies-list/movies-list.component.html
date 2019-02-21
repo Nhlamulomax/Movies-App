@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+</head>
+<body>
+
+<h4>List of Movies Registered</h4>
+<hr>
+
+<table style="width:100%">
+  <tr>
+    <th>Name</th> 
+    <th>Category</th>
+    <th>Rate</th>
+    <th>Edit Option</th>
+    <th>Delete Option</th>
+  </tr>
+  <tr>
+    <td (click)="populateForm(mov)">{{mov.Name}}</td>
+    <td (click)="populateForm(mov)">{{mov.Category}}</td>
+    <td (click)="populateForm(mov)">{{mov.Rate}}</td> 
+    <!--Buttons to Delete a Movie and Edit a movie-->
+    <td><button [routerLink]=" ['./edit-movie'] ">Edit</button> </td> 
+    <td><button class="btn btn-sm btn-outline-danger">Delete</button></td>
+  
+</table>
+
+</body>
+</html>
+
+<router-outlet></router-outlet>

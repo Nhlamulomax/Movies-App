@@ -1,0 +1,35 @@
+<header style="text-align:center">
+  <h4>ADD MOVIE</h4>
+  <hr>
+</header>
+<body>
+    <!--div>{{ joke?.value }}</div>-->
+  <!--<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">-->
+  <form ng-submit="onSubmit()">
+      <label>
+        <b>Name:</b>
+        <input type="text" ng-model="Name">
+      </label>
+    
+      <label>
+        <b>Category:</b>
+        <input type="text" ng-model="Category">
+      </label>
+  
+      <label>
+        <b>Rate:</b>
+        <input type="text" ng-model="Rate">
+      </label>
+  
+      <button [routerLink]=" ['./app-movies-list'] ">Save</button> 
+      <hr>
+      <button [routerLink]=" ['./app-movies-list'] ">Cancel</button> 
+
+      
+  </form>
+
+  <router-outlet></router-outlet>
+  
+</body>
+
+
